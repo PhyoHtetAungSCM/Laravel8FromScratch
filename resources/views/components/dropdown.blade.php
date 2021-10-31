@@ -1,9 +1,9 @@
 @props(['trigger'])
 
-<div x-data="{ show: false }" @click.away="show = false">
+<div x-data="{ show: false }" @click.away="show = false" class="relative">
     <!-- Trigger -->
     <div @click="show = !show">
-        {{  $trigger }}
+        {{ $trigger }}
     </div>
 
     <!-- Links -->
